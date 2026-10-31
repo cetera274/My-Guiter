@@ -1,0 +1,32 @@
+<!-- Output: html -->
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Guiter - ギタリストのためのオールインワン練習ツール">
+  <title>My Guiter</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎸%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">🎸 My Guiter</a>
+    <button id="menuToggle" class="menu-toggle" aria-label="メニューを開く">☰</button>
+  </header>
+  <div class="layout">
+    <nav id="sidebar" class="sidebar">
+      <div id="nav" class="nav"></div>
+      <div class="settings">
+        <label class="check"><input type="checkbox" id="useFlat"> ♭表記を使う</label>
+        <label>チューニング
+          <select id="tuningSelect"></select>
+        </label>
+      </div>
+    </nav>
+    <main id="view" class="view"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
